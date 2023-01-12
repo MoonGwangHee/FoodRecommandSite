@@ -1,37 +1,34 @@
 package Project.page.domain.controller;
 
+
 import Project.page.global.dto.user;
 import Project.page.domain.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
+
 
 import java.util.List;
 
 @Controller
-@RestController
 @RequiredArgsConstructor
 @RequestMapping("/log")
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/Login")
-    public String login(Model model){
-        model.addAttribute("data","로그인 창입니다.");
-        return "/log/LoginMain";
+    @RequestMapping("/Login")
+    public String login() {
+        return "html/LoginMain";
     }
-    @RequestMapping("/newAccount")
-    ModelAndView newAccount() {
-        ModelAndView mav = new ModelAndView("html/CreateAccount");
-       
 
-        return mav;
+    @RequestMapping("/newAccount")
+    public String newAccountForm() {
+        return "html/CreateAccount";
     }
+
 
     @RequestMapping("/user")
     public List<user> user() {

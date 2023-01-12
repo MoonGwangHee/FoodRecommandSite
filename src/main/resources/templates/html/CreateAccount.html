@@ -5,7 +5,168 @@
     <title>회원가입 페이지</title>
 </head>
 <body>
-    <h1>M프로젝트 회원가입</h1>
+<h3>회원가입</h3>
+
+<form method="post" action="">
+
+    <table border="1" width="400" height="400">
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">ID</td>
+
+            <td><input type="text" class="form-control" name="userId" />
+                <input type="submit" value="아이디 중복 검사" />
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">이메일</td>
+
+            <td><input type="text" class="form-control" name="userEmail" /></td>
+
+        </tr>
+
+        <td align="center" bgcolor="#FFFFCC" name="userNumber">전화 번호</td>
+
+        <td>
+
+            <select>
+
+                <option value="t010">010</option>
+
+                <option value="t011">011</option>
+
+                <option value="t016">016</option>
+
+                <option value="t017">017</option>
+
+                <option value="t019">019</option>
+
+            </select>
+
+            -<input type="text" maxlength="4" size="4" />
+
+            -<input type="text" maxlength="4" size="4" />
+
+        </td>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">이름</td>
+
+            <td><input type="text" class="form-control" name="userName" /></td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">주소</td>
+
+            <td>
+                <input type="text" class="form-control" name="userAddress" />
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC" name="userAge">나이</td>
+
+            <td>
+                <select name="selinfor">
+
+                    <option value="0">선택해주세요</option>
+
+                    <option value="1">20</option>
+
+                    <option value="2">21</option>
+
+                    <option value="3">22</option>
+
+                    <option value="4">23</option>
+
+                    <option value="5">24</option>
+
+                    <option value="6">25</option>
+
+                    <option value="7">26</option>
+
+                    <option value="7">27</option>
+
+                    <option value="7">28</option>
+
+                    <option value="7">29</option>
+
+                    <option value="7">30</option>
+
+                    <option value="7">31</option>
+
+                    <option value="7">32</option>
+
+
+
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">비밀번호</td>
+
+            <td>
+                <input type="password" class="form-control" name="userPassword"/>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">메일링</td>
+
+            <td>
+
+                <input type="radio" id="ag1" name="yes" checked="checked" />
+
+                <label name="yes" for="ag1">받겠습니다.</label>
+
+                <input type="radio" id="ag2" name="yes" />
+
+                <label name="yes" for="ag2">받지않겠습니다.</label>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td align="center" bgcolor="#FFFFCC">약관동의</td>
+
+            <td>
+
+                <input type="checkbox" id="agree" checked="checked" />
+
+                <label for="agree">동의합니다.</label>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+
+
+    <br />
+
+    <input type="submit" value="가입하기" />
+
+    <input type="reset" value="다시쓰기" />
+
+</form>
 
 </body>
+
 </html>
